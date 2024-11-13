@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4m12mauiSzyfrCezara.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+               Text="Szyfr typy Cezara"
+               FontSize="50"
+               HorizontalOptions="Center"
+               />
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Przesunięcie (klucz): " />
+                <Entry WidthRequest="50" x:Name="entKlucz" />
+            </HorizontalStackLayout>
+            <Label Text="tekst jawny:" />
+            <Entry x:Name="entJawny" WidthRequest="500" />
+            <Button 
+                Text="Szyfruj" 
+                Clicked="btnSzyfruj" 
+                WidthRequest="100" 
+                HorizontalOptions="Center" />
+            <Label Text="tekst zaszyfrowany:" />
+            <Entry x:Name="entZaszyfrowany" WidthRequest="500" />
+            <Button 
+                Text="odszyfruj" 
+                Clicked="btnOdszyfruj" 
+                WidthRequest="100" 
+                HorizontalOptions="Center" />
+            <Label Text="tekst odszyfrowany" x:Name="lblOdszyfrowany" />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
